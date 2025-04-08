@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -34,10 +35,8 @@ const responses = {
 function Footer({
   socialLinks,
   name
-}: {
-  socialLinks: { github: string; linkedin: string; email: string };
-  name: string;
-}) {
+props) {
+  const { socialLinks, name } = props;) {
   return (
     <footer className="bg-black/30 backdrop-blur-sm py-6 sm:py-8 w-full mt-auto">
       <div className="container mx-auto px-4 sm:px-6 text-center">
